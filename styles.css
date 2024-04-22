@@ -1,0 +1,111 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: var(--OffBlack);
+   font-family: Inter;
+   font-size: 1.6rem;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 1.6rem; color: var(--White); }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.card {
+    background-color: var(--DarkGrey);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    max-width: 32.8rem;
+    gap: 2.7rem;
+    margin: 1.6rem;
+}
+
+.social-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 88px;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+p.location {
+    color: var(--Green);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 3.5rem;
+}
+
+p.description {
+    color: var(--White);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.links a{
+    display: block;
+    text-align: center;
+    padding: 1.4rem;
+    background-color: var(--Grey);
+    border-radius: 10px;
+    margin-bottom: 1.6rem;
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.links a:last-child { margin-bottom: 0; }
+
+
+.links a:hover, .links a:focus {
+    color: var(--DarkGrey);
+    background-color: var(--Green);
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        min-width: 38.5rem;
+        padding: 4rem;
+    }
+}
